@@ -18,10 +18,10 @@ social-image: ''
   <ul class="pretzel-apps">
     {% assign apps = site.data.pretzel-supported-apps | sort: 'name' %}
     {% for app in apps %}
-      <li class="pretzel-supported-app">
-        <img src="{{ app.image }}" alt="">
-        <p>{{ app.name }}</p>
-      </li>
+    <li class="pretzel-supported-app">
+      <img alt="" src="{{ app.image }}">
+      <p>{{ app.name }}</p>
+    </li>
     {% endfor %}
   </ul>
 </section>

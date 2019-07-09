@@ -1,28 +1,28 @@
 const settings = require("electron-settings");
 
-const getKeycode = function() {
+const getKeycode = function () {
   return settings.get("user-keycode") || "`";
 };
 
-const setKeycode = function(code) {
+const setKeycode = function (code) {
   // default to backtick
   code = code || "`";
   settings.set("user-keycode", code);
 };
 
-const getKeymodifier = function() {
+const getKeymodifier = function () {
   return settings.get("user-keymodifier") || "Cmd";
 };
 
-const setKeymodifier = function(code) {
+const setKeymodifier = function (code) {
   settings.set("user-keymodifier", code);
 };
 
-const getTheme = function() {
+const getTheme = function () {
   return settings.get("theme");
 };
 
-const setTheme = function(theme) {
+const setTheme = function (theme) {
   settings.set("theme", theme);
 };
 

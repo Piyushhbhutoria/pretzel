@@ -1,91 +1,98 @@
 <!DOCTYPE html>
-  <html>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="main.css">
-    <head>
-      <meta charset="UTF-8">
-      <title>Pretzel</title>
-    </head>
-    <body class="dark">
-      <div id="show-all-apps">
+<html>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800' rel='stylesheet' type='text/css'>
+<link href="main.css" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <title>Pretzel</title>
+</head>
+<body class="dark">
+<div id="show-all-apps">
+  <?xml version="1.0" encoding="UTF-8"?>
+  <svg height="19px" version="1.1" viewBox="0 0 19 19" width="19px" xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>All Supported Apps</title>
+    <defs></defs>
+    <g fill="none" fill-rule="evenodd" id="recs-group" stroke="none" stroke-width="1">
+      <g fill="#468EE5" id="recs">
+        <rect height="8" id="rec-topleft" rx="1" width="8" x="0" y="0"></rect>
+        <rect height="8" id="rec-topright" rx="1" width="8" x="11" y="0"></rect>
+        <rect height="8" id="rec-bottomright" rx="1" width="8" x="11" y="11"></rect>
+        <rect height="8" id="rec-bottomleft" rx="1" width="8" x="0" y="11"></rect>
+      </g>
+    </g>
+  </svg>
+</div>
+<div id="setting-app">
+  <?xml version="1.0" encoding="UTF-8"?>
+  <svg height="17px" version="1.1" viewBox="0 0 19 17" width="19px" xmlns="http://www.w3.org/2000/svg"
+  >
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>sliders</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-linecap="round" stroke-linejoin="round"
+       stroke-width="1">
+      <g id="sliders"
+         stroke="#468EE5"
+         stroke-width="2" transform="translate(9.500000, 9.000000) rotate(-90.000000) translate(-9.500000, -9.000000) translate(2.000000, 1.000000)">
+        <path d="M3.5,15.5454545 L3.5,7.77272727" id="Shape"></path>
+        <path d="M3.5,4.31818182 L3.5,0" id="Shape"></path>
+        <path d="M12.4090909,15.5454545 L12.4090909,11.2272727" id="Shape"></path>
+        <path d="M12.4090909,7.77272727 L12.4090909,0" id="Shape"></path>
+        <path d="M0.909090909,4.31818182 L6.09090909,4.31818182" id="Shape"></path>
+        <path d="M9.81818182,11.2272727 L15,11.2272727" id="Shape"></path>
+      </g>
+    </g>
+  </svg>
+</div>
+<div class="button button--xs button--quit" id="quit-app">Quit</div>
+<h1 class="app-name"></h1>
+<div class="user-settings">
+  <ul>
+    <li class="flexbox">
+      <label>Night Mode</label>
+      <div class="mode">
         <?xml version="1.0" encoding="UTF-8"?>
-        <svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <title>All Supported Apps</title>
-            <defs></defs>
-            <g id="recs-group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="recs" fill="#468EE5">
-                    <rect id="rec-topleft" x="0" y="0" width="8" height="8" rx="1"></rect>
-                    <rect id="rec-topright" x="11" y="0" width="8" height="8" rx="1"></rect>
-                    <rect id="rec-bottomright" x="11" y="11" width="8" height="8" rx="1"></rect>
-                    <rect id="rec-bottomleft" x="0" y="11" width="8" height="8" rx="1"></rect>
-                </g>
-            </g>
+        <svg height="24px" version="1.1" viewBox="0 0 16 16" width="24px" xmlns="http://www.w3.org/2000/svg"
+        >
+          <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+          <title>Artboard</title>
+          <desc>Created with Sketch.</desc>
+          <defs></defs>
+          <g fill="none" fill-rule="evenodd" id="Artboard" stroke="none" stroke-width="1">
+            <path d="M13,8.43888889 C12.7568615,11.0698936 10.5086225,13.057575 7.86765359,12.9764268 C5.22668467,12.8952786 3.10472138,10.7733153 3.02357317,8.13234641 C2.94242496,5.49137749 4.93010644,3.24313846 7.56111111,3 C6.41686774,4.54802873 6.57736477,6.70025177 7.9385565,8.0614435 C9.29974823,9.42263523 11.4519713,9.58313226 13,8.43888889 Z"
+                  id="moon" stroke="#000000"></path>
+          </g>
         </svg>
       </div>
-      <div id="setting-app">
-        <?xml version="1.0" encoding="UTF-8"?>
-        <svg width="19px" height="17px" viewBox="0 0 19 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
-            <title>sliders</title>
-            <desc>Created with Sketch.</desc>
-            <defs></defs>
-            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-                <g id="sliders" transform="translate(9.500000, 9.000000) rotate(-90.000000) translate(-9.500000, -9.000000) translate(2.000000, 1.000000)" stroke="#468EE5" stroke-width="2">
-                    <path d="M3.5,15.5454545 L3.5,7.77272727" id="Shape"></path>
-                    <path d="M3.5,4.31818182 L3.5,0" id="Shape"></path>
-                    <path d="M12.4090909,15.5454545 L12.4090909,11.2272727" id="Shape"></path>
-                    <path d="M12.4090909,7.77272727 L12.4090909,0" id="Shape"></path>
-                    <path d="M0.909090909,4.31818182 L6.09090909,4.31818182" id="Shape"></path>
-                    <path d="M9.81818182,11.2272727 L15,11.2272727" id="Shape"></path>
-                </g>
-            </g>
-        </svg>
-      </div>
-      <div id="quit-app" class="button button--xs button--quit">Quit</div>
-      <h1 class="app-name"></h1>
-      <div class="user-settings">
-        <ul>
-          <li class="flexbox">
-            <label>Night Mode</label>
-            <div class="mode">
-              <?xml version="1.0" encoding="UTF-8"?>
-              <svg width="24px" height="24px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
-                  <title>Artboard</title>
-                  <desc>Created with Sketch.</desc>
-                  <defs></defs>
-                  <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                      <path d="M13,8.43888889 C12.7568615,11.0698936 10.5086225,13.057575 7.86765359,12.9764268 C5.22668467,12.8952786 3.10472138,10.7733153 3.02357317,8.13234641 C2.94242496,5.49137749 4.93010644,3.24313846 7.56111111,3 C6.41686774,4.54802873 6.57736477,6.70025177 7.9385565,8.0614435 C9.29974823,9.42263523 11.4519713,9.58313226 13,8.43888889 Z" id="moon" stroke="#000000"></path>
-                  </g>
-              </svg>
-            </div>
-          </li>
-          <li class="flexbox flexbox--column">
-            <label>Shortcut to Open Pretzel</label>
-            <div class="flexbox select__group">
-              <div class="select_style">
-                <select id="keymodifier">
-                  <option value="Cmd">Command</option>
-                  <option value="Ctrl">Control</option>
-                  <option value="Alt">Alt</option>
-                  <option value="Option">Option</option>
-                  <option value="Shift">Shift</option>
-                </select>
-                <span></span>
-              </div>
-              <input type="text" id="keycode" maxlength="1"/>
-            </div>
-          </li>
-        </ul>
-        <div class="flexbox user-settins-buttons">        
-          <div class="button button--sm cancel">Cancel</div>
-          <div class="button button--sm button--primary save-and-relaunch">Save and Relaunch</div>
+    </li>
+    <li class="flexbox flexbox--column">
+      <label>Shortcut to Open Pretzel</label>
+      <div class="flexbox select__group">
+        <div class="select_style">
+          <select id="keymodifier">
+            <option value="Cmd">Command</option>
+            <option value="Ctrl">Control</option>
+            <option value="Alt">Alt</option>
+            <option value="Option">Option</option>
+            <option value="Shift">Shift</option>
+          </select>
+          <span></span>
         </div>
+        <input id="keycode" maxlength="1" type="text"/>
       </div>
-      <input type="text" id="search" placeholder="Search..." />
-      <div class="shortcuts-container"></div>
-    </body>
-    <script src="./renderer.js"></script>
-  </html>
+    </li>
+  </ul>
+  <div class="flexbox user-settins-buttons">
+    <div class="button button--sm cancel">Cancel</div>
+    <div class="button button--sm button--primary save-and-relaunch">Save and Relaunch</div>
+  </div>
+</div>
+<input id="search" placeholder="Search..." type="text"/>
+<div class="shortcuts-container"></div>
+</body>
+<script src="./renderer.js"></script>
+</html>

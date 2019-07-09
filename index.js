@@ -3,7 +3,7 @@ const fs = require("fs");
 const url = require("url");
 const path = require("path");
 // third party
-const { Menu, globalShortcut } = require("electron");
+const {Menu, globalShortcut} = require("electron");
 const autoUpdater = require("electron-updater").autoUpdater;
 const objc = require("objc");
 const stringSimilarity = require("string-similarity");
@@ -23,7 +23,7 @@ const mb = menubar({
 
 // setup objc bridge
 objc.import("AppKit");
-const { NSWorkspace, js } = objc;
+const {NSWorkspace, js} = objc;
 
 function getCurrentApp() {
   const currentAppProxy = NSWorkspace.sharedWorkspace()

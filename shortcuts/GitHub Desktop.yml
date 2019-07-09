@@ -8,7 +8,6 @@ Site wide shortcuts:
   - "Zoom in for larger text and graphics": "Cmd + ="
   - "Zoom out for smaller text and graphics": "Cmd + -"
   - "Toggle Developer Tools": "Opt + Cmd + I"
-
 Repositories:
   - "Add a new repository": "Cmd + N"
   - "Add a local repository": "Cmd + O"
@@ -21,7 +20,6 @@ Repositories:
   - "Open repository in your preferred terminal tool": "Ctrl + `"
   - "Show the repository in Finder": "Shift + Cmd + F"
   - "Open the repository in your preferred editor tool": "Shift + Cmd + A"
-
 Branches:
   - "Show all your changes before committing": "Cmd + 1"
   - "Show your commit history": "Cmd + 2"

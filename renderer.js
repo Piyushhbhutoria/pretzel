@@ -2,7 +2,7 @@
 const path = require("path");
 const fs = require("fs");
 // third party
-const { ipcRenderer, remote, shell } = require("electron");
+const {ipcRenderer, remote, shell} = require("electron");
 const yaml = require("js-yaml");
 const setting = require("./setting");
 // variables
@@ -106,10 +106,10 @@ ipcRenderer.on("currentApp", (event, name) => {
     shortcuts[prop].forEach(element => {
       html += `<div class="shortcut">
         <label class="shortcut__key"><span>${Object.keys(
-          element
-        )}</span></label>
+        element
+      )}</span></label>
         <label class="shortcut__name"><span>${
-          Object.values(element)[0]
+        Object.values(element)[0]
         }</span></label>
       </div>`;
     });
@@ -150,7 +150,7 @@ cancelSettingBtn.addEventListener("click", () => {
 saveAndRelaunchBtn.addEventListener("click", () => {
   const keymodifier = get("#keymodifier").options[
     get("#keymodifier").selectedIndex
-  ].value;
+    ].value;
   const keycode = get("#keycode").value;
   setting.setKeycode(keycode);
   setting.setKeymodifier(keymodifier);
